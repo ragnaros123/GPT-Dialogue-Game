@@ -31,3 +31,5 @@ To run the project in Unity, install Unity Engine version 2022.3.3f1, create a n
 Open the project in Unity and make sure TextMeshPro is installed by clicking on the top toolbar on Window -> Package Manager and then searching for TextMeshPro to install. Then go to Window -> TextMeshPro and click on Import TMP Essential Resources and import everything.
 
 To install the Ink add-on, go to the Unity Asset Store and import the "Ink Unity Integration". Then go to Window -> Package Manager, select "My Assets" in the top-left dropdown, and then find "Ink Unity Integration" to import it.
+
+To install the new input system, go to Window-\>Package Manager, select "Unity Registry" in the top left drop down, and then search for "input", then install the "Input System" 
