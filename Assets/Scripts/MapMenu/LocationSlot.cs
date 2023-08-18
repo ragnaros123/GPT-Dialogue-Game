@@ -71,8 +71,9 @@ public class LocationSlot : MonoBehaviour
     void LoadAndDisplayImage()
     {
 
-        string imagePath = Application.dataPath + "/Animations/background/" + location + ".png";
-        Texture2D texture = LoadTextureFromFile(imagePath);
+        string imagePath =  location;
+        Texture2D texture = Resources.Load<Texture2D>(imagePath);
+        Debug.Log(texture);
 
         locationImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
     }

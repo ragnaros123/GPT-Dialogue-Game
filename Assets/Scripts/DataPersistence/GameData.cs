@@ -18,7 +18,7 @@ public class GameData
 
     public string currentLocation;
     public string currentGameScence;
-    public int chancesRemaining;
+    public int chanceRemaining;
 
     //used to look up the next scene
     public Dictionary<int, (int, string)> stageLocations;
@@ -30,14 +30,13 @@ public class GameData
 
     public long lastUpdatedTimeLong;
 
-    public int chanceRemaining;
 
     public GameData()
     {
         //Gamestage 1 represents Act 1
         this.gameStage = 11;
 
-        this.chancesRemaining = 5;
+        this.chanceRemaining = 5;
 
         obtainedObjects = new SerializableDictionary<string, bool>()
         {

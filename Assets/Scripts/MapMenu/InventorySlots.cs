@@ -56,8 +56,8 @@ public class InventorySlot : MonoBehaviour
     void LoadAndDisplayImage()
     {
 
-        string imagePath = Application.dataPath + "/Animations/Items/" + itemName + ".png";
-        Texture2D texture = LoadTextureFromFile(imagePath);
+        string imagePath =  itemName;
+        Texture2D texture = Resources.Load<Texture2D>(imagePath);
 
         itemImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
     }

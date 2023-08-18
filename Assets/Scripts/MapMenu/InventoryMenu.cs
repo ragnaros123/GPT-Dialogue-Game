@@ -90,13 +90,16 @@ public class InventoryMenu : MonoBehaviour, IDataPersistence
 
         if (gameStage / 10 == 2)
         {
-            SubmitButton.SetActive(false);
+            titleText.text = "Inventory";
+           SubmitButton.SetActive(false);
+            CloseButton.SetActive(true);
 
         }
         if (gameStage / 10 == 3)
         {
 
             titleText.text = "Choose an item to present";
+            SubmitButton.SetActive(true);
             CloseButton.SetActive(false);
         }
     }
